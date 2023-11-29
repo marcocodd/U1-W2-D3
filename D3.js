@@ -232,10 +232,36 @@ else if (spaceship > 1000){
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
+for (let i =0; i< starWarsCharacters; i++){
+
+  
+}
+
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
+
+
+
+console.log('Esercizio 9', charactersNames)
+
+for (let i =0; i< charactersNames.length; i++){
+
+
+
+  
+for(let k = 0; k<femaleCharacters.length; k ++)
+
+
+if(charactersNames[i] === femaleCharacters[k].name)
+{
+  charactersNames.splice(i, 1)
+  console.log(charactersNames)
+}
+}
+console.log(femaleCharacters)
+console.log(charactersNames)
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
